@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="VUNavBar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="headerDiv">
+            <div id="LogoDiv">
+                <img src="VuLogo.png" alt="VU Logo" id="Vulogo">
+                <img src="GopLogo.png" alt="Government of Pakistan Logo" id="Goplogo">
+            </div>
+            <i class="fa-solid fa-bars" id="MenuIcon"></i>
+        </div>
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house-chimney"></i> <span class="liText"> Home </span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-list"></i> <span class="liText"> To Do Calendar </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-book-open"></i> <span class="liText"> Grade Book </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-book"></i><span class="liText"> Account Book </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i> <span class="liText"> Progress </span>
+            </li>
+
+
+            <li>
+                <i class="fa-regular fa-calendar-days"></i><span class="liText"> Lecture Schedule </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-envelope"></i> <span class="liText"> Mail </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-list-check"></i> <span class="liText"> Notes </span>
+            </li>
+
+
+            <li>
+                <i class="fa-regular fa-sun"></i> <span class="liText"> My Study Scheme </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-graduation-cap"></i><span class="liText"> My Studied Courses </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-bag-shopping"></i> <span class="liText"> Student Services </span>
+            </li>
+
+
+            <li>
+                <i class="fa-regular fa-calendar-check"></i><span class="liText"> Course Selection </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-phone"></i><span class="liText"> Contact Us </span>
+            </li>
+
+
+            <li>
+                <i class="fa-solid fa-question"></i> <span class="liText"> Help </span>
+            </li>
+
+
+        </ul>
+        <div id="links">
+
+            <a href="https://www.vu.edu.pk/" id="VU">
+                Virtual University of Pakistan
+            </a>
+            <a href="https://www.vu.edu.pk/" id="Fed">
+                Federal Government University
+            </a>
+        </div>
+
+    </div>
+    <script>
+        let isShrink = false;
+        const Menu = document.getElementById("MenuIcon");
+        const Nav = document.getElementById("main");
+        const Pos = document.getElementById("MenuIcon");
+        const hide = document.querySelectorAll("img,a,.liText");
+        Menu.addEventListener("click", shrinkMenu);
+        function shrinkMenu() {
+            if (!isShrink) {
+
+                Nav.style.width = "120px";
+                Pos.style.left = "48px";
+                hide.forEach(element => {
+                    element.style.display = "none";
+                });
+                isShrink = true;
+            }
+            else {
+                Nav.style.width = "35vh";
+                Pos.style.left = "330px";
+                hide.forEach(element => {
+                    if (element.tagName === "A" || element.tagName === "IMG") {
+                        element.style.display = "inline-block";
+                    } else {
+                        element.style.display = "inline";
+                    }
+                });
+                isShrink = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#main{
+    background-color: rgb(44,46,62);
+    color:rgb(245,245,245);
+    height: 100vh;
+    width: 35vh;
+   
+}
+li{
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 50px;
+}
+li:hover{
+background-color: rgb(144, 145, 148);   
+cursor: pointer;
+}
+li i{
+    margin-right: 20px;
+}
+a{
+    font-size: 25px;
+    display: block;
+    margin-left: 40px;
+    text-decoration: none;
+}
+#VU{
+   color:rgb(245,245,245);
+    font-weight: 700;
+}
+#Fed{
+    color: rgb(49,203,51);
+}
+#links:hover a{
+    text-decoration: rgb(42,51,127) underline;
+}
+img{
+    background-color: aliceblue;
+  
+}
+#LogoDiv{
+   padding-top: 12px;
+   padding-left: 50px;
+   padding-bottom: 15px;
+   display: inline-block;
+}
+#headerDiv{
+    background-color: rgb(40,42,60);
+    height: 117px;
+    position: relative;
+}
+#headerDiv i{
+    position: absolute;
+    top: 45px;
+    left: 330px;
+font-size: 40px;
+color: seashell;
+}
+#headerDiv i:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+#Vulogo{
+    height: 85px;
+    width: 140px;
+}
+#Goplogo{
+    height: 85px;
+    width: 85px;
+}
