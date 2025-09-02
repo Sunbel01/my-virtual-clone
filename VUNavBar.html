@@ -1,138 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="VUNavBar.css">
-    <title>Document Lalalalala</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+    <title>My Clone</title>
 </head>
-
-<body>
-    <div id="main">
-        <div id="headerDiv">
-            <div id="LogoDiv">
-                <img src="VuLogo.png" alt="VU Logo" id="Vulogo">
-                <img src="GopLogo.png" alt="Government of Pakistan Logo" id="Goplogo">
+    <body>
+        <div id="main">
+            <div id="headerDiv">
+              <div id="LogoDiv">
+                <img src="VuLogo.png" alt="VU Logo" id="Vulogo" class="mainBarImg"/>
+                <img
+                  src="GopLogo.png"
+                  alt="Government of Pakistan Logo"
+                  id="Goplogo" class="mainBarImg"
+                />
+              </div>
+              <i class="fa-solid fa-bars" id="MenuIcon"></i>
             </div>
-            <i class="fa-solid fa-bars" id="MenuIcon"></i>
-        </div>
-        <ul>
-
-            <li>
-                <i class="fa-solid fa-house-chimney"></i> <span class="liText"> Home </span>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-list"></i> <span class="liText"> To Do Calendar </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-book-open"></i> <span class="liText"> Grade Book </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-book"></i><span class="liText"> Account Book </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-chart-line"></i> <span class="liText"> Progress </span>
-            </li>
-
-
-            <li>
-                <i class="fa-regular fa-calendar-days"></i><span class="liText"> Lecture Schedule </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-envelope"></i> <span class="liText"> Mail </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-list-check"></i> <span class="liText"> Notes </span>
-            </li>
-
-
-            <li>
-                <i class="fa-regular fa-sun"></i> <span class="liText"> My Study Scheme </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-graduation-cap"></i><span class="liText"> My Studied Courses </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-bag-shopping"></i> <span class="liText"> Student Services </span>
-            </li>
-
-
-            <li>
-                <i class="fa-regular fa-calendar-check"></i><span class="liText"> Course Selection </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-phone"></i><span class="liText"> Contact Us </span>
-            </li>
-
-
-            <li>
-                <i class="fa-solid fa-question"></i> <span class="liText"> Help </span>
-            </li>
-
-
-        </ul>
-        <div id="links">
-
-            <a href="https://www.vu.edu.pk/" id="VU">
+            <ul>
+              <li>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span class="liText"> Home </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-list"></i>
+                <span class="liText"> To Do Calendar </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-book-open"></i>
+                <span class="liText"> Grade Book </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-book"></i
+                ><span class="liText"> Account Book </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="liText"> Progress </span>
+              </li>
+      
+              <li>
+                <i class="fa-regular fa-calendar-days"></i
+                ><span class="liText"> Lecture Schedule </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span class="liText"> Mail </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                <span class="liText"> Notes </span>
+              </li>
+      
+              <li>
+                <i class="fa-regular fa-sun"></i>
+                <span class="liText"> My Study Scheme </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-graduation-cap"></i
+                ><span class="liText"> My Studied Courses </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="liText"> Student Services </span>
+              </li>
+      
+              <li>
+                <i class="fa-regular fa-calendar-check"></i
+                ><span class="liText"> Course Selection </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-phone"></i
+                ><span class="liText"> Contact Us </span>
+              </li>
+      
+              <li>
+                <i class="fa-solid fa-question"></i>
+                <span class="liText"> Help </span>
+              </li>
+            </ul>
+            <div id="links">
+              <a href="https://www.vu.edu.pk/" id="VU" class="mainBarImg">
                 Virtual University of Pakistan
-            </a>
-            <a href="https://www.vu.edu.pk/" id="Fed">
+              </a>
+              <a href="https://www.vu.edu.pk/" id="Fed" class="mainBarImg">
                 Federal Government University
-            </a>
+              </a>
+            </div>
+          </div>
+    
+          <div id="mainContent">
+
+          <div id="TopBar">
+            <div class="items" id="item1">
+            <img src="LMS.png" id="Lms">
+    <h1>Learning Management System</h1>
+    </div>
+    <div class="items" id="item2">
+        <i class="fa-regular fa-bell fa-shake"></i>
+    <div id="UserDetail">
+      <p>Maham Ali</p>
+      <p>(BC230202178)</p>
+    </div>
+    
+    <img src="ProfilePhoto.jpg" alt="Profile Photo" id="ProfilePic">
+    </div>
+        
+    </div>
+    <div id="DropDown">
+        <div id="UserInfo">
+            <img src="ProfilePhoto.jpg" alt="Profile Photo" id="ProfilePic1">
+            <div id="PersonalInfo">
+            <p id="Name">Maham Ali</p>
+            <p id="Course">Computer Science</p>
         </div>
+        </div>
+        <div id="OtherDetails">
+            <ul>
+    
+                <li>
+                    <i class="fa-regular fa-circle-user"></i> <span class="liText2"> My Profile </span>
+                </li>
+    
+                <li>
+                    <i class="fa-solid fa-sheet-plastic fa-flip-vertical"></i> <span class="liText2">Change Password </span>
+                </li>
+    
+    
+                <li>
+                    <i class="fa-solid fa-bag-shopping"></i> <span class="liText2"> My Login History </span>
+                </li>
+    <button id="LogoutButton">
+            Logout
+        </button>
+    
+        </div>
+    
+        </div>
+
+
+    <h1 id="mCh1">
+        My Courses ( <span id="session">Spring 2025 </span> )
+    </h1>
+<div id="Courses">
+    <div class="courseCard">
+        <section class="Intro">
+        <h2 class="courseTitle">CS 301 - Data Structures</h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">3 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Dr. Ali Imran</p>
+        <p class="Education">Ph.D Computer Science</p>
+        <p class="Institution">University of Illinios at Urbana-Champaign</p>
+        <button class="LectureNum">45</button>
+
+
 
     </div>
-    <script>
-        let isShrink = false;
-        const Menu = document.getElementById("MenuIcon");
-        const Nav = document.getElementById("main");
-        const Pos = document.getElementById("MenuIcon");
-        const hide = document.querySelectorAll("img,a,.liText");
-        Menu.addEventListener("click", shrinkMenu);
-        function shrinkMenu() {
-            if (!isShrink) {
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
 
-                Nav.style.width = "120px";
-                Pos.style.left = "48px";
-                hide.forEach(element => {
-                    element.style.display = "none";
-                });
-                isShrink = true;
-            }
-            else {
-                Nav.style.width = "35vh";
-                Pos.style.left = "330px";
-                hide.forEach(element => {
-                    if (element.tagName === "A" || element.tagName === "IMG") {
-                        element.style.display = "inline-block";
-                    } else {
-                        element.style.display = "inline";
-                    }
-                });
-                isShrink = false;
-            }
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS 301P - Data Structures (Practical)</h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">1 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Dr. Ali Imran</p>
+        <p class="Education">Ph.D Computer Science</p>
+        <p class="Institution">University of Illinios at Urbana-Champaign</p>
+        <button class="LectureNum">45</button>
+
+
+
+    </div>
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS 401 - Computer Architecture and ...</h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">3 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Mr. Wahab Khan</p>
+        <p class="Education">B.Sc (Electrical Engineering)</p>
+        <p class="Institution">UET, Lahore.</p>
+        <button class="LectureNum">45</button>
+
+
+
+    </div>
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS 401P - Computer Architecture and ...</h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">1 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Mr. Wahab Khan</p>
+        <p class="Education">B.Sc (Electrical Engineering)</p>
+        <p class="Institution">UET, Lahore.</p>
+        <button class="LectureNum">45</button>
+
+
+
+    </div>
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS 504 - Software Engineering - l</h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">3 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+
+    <div class="InstructorDetails">
+        <p class="Name">Dr. Hamid Sheikh</p>
+        <p class="Education">D.Sc. (Cs)</p>
+        <p class="Institution">George Washington University, USA</p>
+        <button class="LectureNum">45</button>
+
+
+
+    </div>
+    <hr>
+
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS610 - Computer Networks </h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">3 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Mr. Saim Ahmed</p>
+        <p class="Education">M.S Electrical Engineering (Telecommunication)</p>
+        <p class="Institution">Oklahoma State University USA </p>
+        <button class="LectureNum">45</button>
+
+    </div>
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">CS610P - Computer Networks (Practical) </h2>
+        <p class="courseSub">Computer Science/Information Technology</p>
+        <p class="creditHOurs">1 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Mr. Saim Ahmed</p>
+        <p class="Education">M.S Electrical Engineering (Telecommunication)</p>
+        <p class="Institution">Oklahoma State University USA </p>
+        <button class="LectureNum">45</button>
+
+
+    </div>
+
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+    <div class="courseCard">
+        <section class="Intro">
+
+        <h2 class="courseTitle">MGT602 - Entrepreneurship</h2>
+        <p class="courseSub">Management</p>
+        <p class="creditHOurs">3 Credit Hour(s)</p>
+    </section>
+    <div class="InstructorPhoto">
+
+    <img src="Avatar.png" alt="Instructor" class="InstructorPic">
+</div>
+
+    <div class="InstructorDetails">
+        <p class="Name">Dr. Ali Raza</p>
+        <p class="Education">D.com</p>
+        <p class="Institution">Oklahoma State University USA </p>
+        <button class="LectureNum">45</button>
+    </div>
+    <hr>
+    <div class="options">
+        <li>
+            <i class="fa-solid fa-book-open-reader"></i> <p class="OptionsText"> Assignments </p Credit Hour(s)>
+
+        </li>
+        <li>
+            <i class="fas fa-comments"></i><p class="OptionsText"> GDB </p>   
+
+        </li>
+        <li>
+            <i class="fa-regular fa-clock"></i><p class="OptionsText"> Quiz </p>
+            
+        </li>
+        
+        <li>
+            <i class="fas fa-tasks"></i> <p class="OptionsText"> Activity </p>
+
+        </li>
+        <li>
+            <i class="fa-solid fa-bullhorn"></i> <p class="OptionsText"> Announcements </p>
+            </li>            
+    </div>
+
+    </div>
+</div>
+</div>
+<script>
+    let isShrink = false
+    const Menu = document.getElementById('MenuIcon')
+    const Nav = document.getElementById('main')
+    const hide = document.querySelectorAll('.mainBarImg,.liText')
+    const topbar=document.getElementById('TopBar')
+    const growing= document.getElementById('item1')
+    const growing2=document.getElementById('mainContent')
+    Menu.addEventListener('click', shrinkMenu)
+    function shrinkMenu() {
+      if (!isShrink) {
+        Nav.style.width = '120px'
+        Menu.style.left = '36px'
+        growing2.style.marginLeft='120px'
+        hide.forEach((element) => {
+          element.style.display = 'none'
+        })
+        isShrink = true
+      } else {
+        Nav.style.width = '340px'
+        Menu.style.left = '270px'
+        growing2.style.marginLeft='340px'
+
+
+        hide.forEach((element) => {
+          if (element.tagName === 'A' || element.tagName=== 'IMG') {
+            element.style.display = 'inline-block'
+          } else {
+            element.style.display = 'inline'
+          }
+        })
+        isShrink = false
+      }
+    }
+    let displaying = false;
+    const Pic = document.getElementById("ProfilePic");
+    const Menu2 = document.getElementById("DropDown");
+    Pic.addEventListener("click", displayMenu);
+    function displayMenu() {
+        if (!displaying) {
+
+           Menu2.style.display = "block";
+            displaying = true;
         }
-    </script>
-</body>
+        else {
+            Menu2.style.display= "none";
 
+           
+                
+            
+                displaying = false;
+        }
+            }
+  </script>
+
+</body>
 </html>

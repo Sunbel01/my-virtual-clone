@@ -1,76 +1,462 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 }
 #main{
-    background-color: rgb(44,46,62);
-    color:rgb(245,245,245);
-    height: 100vh;
-    width: 35vh;
-   
+   background-color: rgb(44,46,62);
+   color:rgb(245,245,245);
+   height: 100vh;
+   width: 340px;
+   position: fixed;
+   top: 0px;
+
 }
+
+#TopBar {
+   background-color: rgb(255, 255, 255);
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: 0px 0px 20px rgba(49, 45, 45, 0.2);
+
+   align-items: center;
+   position: sticky;
+   top: 0px;
+   z-index: 5;
+}
+#mainContent {
+   margin-left: 340px;     
+   background-color: rgb(242, 243, 248);
+}
+
 li{
-    list-style: none;
-    font-size: 30px;
-    padding: 20px 50px;
+   list-style: none;
+   font-size: 20px;
+   padding: 16.5px 40px;
 }
-li:hover{
-background-color: rgb(144, 145, 148);   
+#main li:hover{
+background-color: rgb(144, 145, 148);  
 cursor: pointer;
 }
 li i{
-    margin-right: 20px;
+   margin-right: 20px;
 }
 a{
-    font-size: 25px;
-    display: block;
-    margin-left: 40px;
-    text-decoration: none;
+   font-size: 20px;
+   display: block;
+   margin-left: 40px;
+   text-decoration: none;
 }
 #VU{
-   color:rgb(245,245,245);
-    font-weight: 700;
+color:rgb(245,245,245);
+   font-weight: 700;
 }
 #Fed{
-    color: rgb(49,203,51);
+   color: rgb(49,203,51);
 }
 #links:hover a{
-    text-decoration: rgb(42,51,127) underline;
+   text-decoration: rgb(42,51,127) underline;
 }
 img{
-    background-color: aliceblue;
-  
+   background-color: aliceblue;
 }
 #LogoDiv{
-   padding-top: 12px;
-   padding-left: 50px;
-   padding-bottom: 15px;
-   display: inline-block;
+padding-top: 12px;
+padding-left: 50px;
+padding-bottom: 15px;
+display: inline-block;
 }
 #headerDiv{
-    background-color: rgb(40,42,60);
-    height: 117px;
-    position: relative;
+   background-color: rgb(40,42,60);
+   height: 100px;
+   position: relative;
+   margin-bottom: 25px;
 }
 #headerDiv i{
-    position: absolute;
-    top: 45px;
-    left: 330px;
-font-size: 40px;
+   position: absolute;
+   top: 30px;
+   left: 270px;
+font-size: 35px;
 color: seashell;
 }
 #headerDiv i:hover{
-    color: lightblue;
-    cursor: pointer;
+   color: lightblue;
+   cursor: pointer;
 }
 
+
 #Vulogo{
-    height: 85px;
-    width: 140px;
+   height: 70px;
+   width: 120px;
 }
 #Goplogo{
-    height: 85px;
-    width: 85px;
+   height: 70px;
+   width: 70px;
+}
+#Lms{
+   height: 40px;
+}
+
+#item1{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding-left: 40px;
+   gap: 40px;
+   flex-grow: 1;
+}
+#item1 h1{
+   font-weight: 400;
+   font-size: 25px;
+}
+       
+
+
+
+.items {
+   flex-grow: 1;       
+   display: flex;       
+   align-items: center;
+ }
+ 
+ #item2 {
+   flex-grow: 0;        
+   justify-content: flex-end;
+   gap: 25px;
+   padding-right: 20px;
+ }
+#item2 img{
+   height: 60px;
+   width: 50px;
+
+   border-radius: 50%;
+   cursor: pointer;
+
+}
+#item2 i{
+   font-size: 25px;
+   color: rgb(247, 24, 247);
+   animation-duration: 3s;
+   cursor: pointer;
+
+}
+#DropDown{
+   position:absolute;
+   top: 100px;
+   right:20px;
+   height: 400px;
+   width: 400px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+   display: none;
+   z-index: 1;
+   background-color: rgb(255, 255, 255);
+}
+#UserInfo img{
+height: 100px;
+width: 85px;
+border-radius: 50%;
+
+}
+#UserInfo {
+   padding: 30px 0px 30px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 30px;
+   background-color: rgb(128,86,221);
+   height: 170px;
+}
+
+#UserInfo #Name{
+   font-size: 22px;
+   font-weight: 400;
+   color: rgb(222, 223, 229);
+}
+#UserInfo #Course{
+   padding-top: 12px;
+   font-size: 18px;
+   color: rgba(217, 218, 227, 0.856);
+   cursor: pointer;
+}
+#UserInfo #Course:hover{
+   text-decoration: underline;
+   color: rgb(217, 218, 227);
+
+}
+#OtherDetails{
+   padding: 25px 0px 25px 25px;
+}
+#OtherDetails i{
+   color: white;
+   text-shadow: 
+   -1px -1px 0 rgb(156, 151, 151),  
+   1px -1px 0 rgb(156, 151, 151),
+   -1px  1px 0 rgb(156, 151, 151),
+   1px  1px 0 rgb(156, 151, 151);
+}
+#OtherDetails li{
+   list-style: none;
+
+   padding: 10px 0px;
+   cursor: pointer;
+}
+li i{
+   margin-right: 20px;
+   font-size: 18px;
+
+}
+li .liText2{
+   color: rgba(133, 134, 143, 0.842);
+}
+#LogoutButton{
+   padding: 10px 30px;
+   border-radius: 25px;
+   color: rgb(122, 116, 205);
+   font-weight: 600;
+   border: 1px solid rgba(205, 206, 211);
+   background-color: white;
+   margin-top: 15px;
+   cursor: pointer;
+}
+#LogoutButton:hover{
+   background-color: rgb(244, 245, 248);
+
+}
+#OtherDetails li:hover i
+{
+text-shadow:  -1px -1px 0 rgb(104, 95, 230),  
+   1px -1px 0 rgb(122, 116, 205),
+-1px  1px 0 rgb(122, 116, 205),
+   1px  1px 0 rgb(122, 116, 205);
+}
+#OtherDetails li:hover .liText2 {
+   color: rgb(122, 116, 205);
+}
+#mCh1 {
+   padding-top: 50px;
+   padding-left: 40px;
+   font-size: 25px;
+   font-weight: 600;
+}
+
+#session {
+   font-weight: 500;
+   color: rgb(88, 103, 221);
+   font-size: 22 px;
+}
+
+.courseCard {
+   background-color: rgb(255, 255, 255);
+   border: 1px solid black;
+   box-shadow: 13px 13px 7px rgb(170, 170, 170);
+   position: relative;
+
+}
+
+#Courses {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 40px;
+   column-gap: 45px;
+   row-gap: 30px;
+}
+#Courses hr{
+   width: calc(100% - 30px);
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.InstructorPic {
+   height: 145px;
+   width: 115px;
+   background-color: white;
+   border: 1px solid rgb(155, 155, 155);
+   border-radius: 7px;
+}
+
+.Intro {
+   background-color: rgb(135, 91, 226);
+   color: rgba(255, 255, 255, 0.89);
+   padding: 15px 0px 15px 30px;
+   line-height: 30px;
+   cursor: pointer;
+}
+
+.InstructorPhoto {
+   display: inline-block;
+   padding: 25px 60px 25px 20px;
+}
+
+.InstructorDetails {
+   display: inline-block;
+   padding: 40px 0px 25px 15px;
+   vertical-align: top;
+   line-height: 20px;
+}
+
+.Name {
+   font-weight: 700;
+}
+
+.Education,
+.Institution {
+   font-size: 13px;
+}
+
+
+
+.options {
+   display: flex;
+}
+
+.options li {
+   list-style: none;
+   padding: 15px 10px 20px 15px;
+   width: 120px;
+   text-align: center;
+}
+
+.options i {
+   font-size: 40px;
+   cursor: pointer;
+
+}
+
+.OptionsText {
+   font-size: 12px;
+   font-weight: 600;
+   padding-top: 15px;
+}
+
+.options i:hover {
+   color: rgb(191, 191, 191);
+   transform: scale(1.15);
+}
+
+.LectureNum {
+   height: 42px;
+   width: 75px;
+   border-radius: 25px;
+   font-size: 30px;
+   padding: 3px 0px 3px 0px;
+   font-style: italic;
+   font-weight: 600;
+   background-color: white;
+   border: 1px solid rgb(54, 163, 247);
+   color: rgb(54, 163, 247);
+   position: absolute;
+   top: 140px;
+   right: 15px;
+   box-shadow: 2px 2px 7px hwb(206 67% 0%);
+   cursor: pointer;
+}
+
+.LectureNum:hover {
+   color: white;
+   background-color: rgb(54, 163, 247);
+}
+
+
+#session{
+   font-weight: 500;
+   color: rgb(88, 103, 221);
+   font-size: 22px;
+}
+.courseCard{
+   background-color: rgb(255, 255, 255);
+   border: 1px solid black;
+   box-shadow: 13px 13px 7px  rgb(170, 170, 170);
+   position: relative;
+
+}
+#Courses{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 40px;
+   column-gap: 45px;
+   row-gap: 30px;
+}
+.InstructorPic{
+   height: 145px;
+   width: 115px;
+   background-color: white;
+   border: 1px solid rgb(155, 155, 155);
+   border-radius: 7px;
+}
+.Intro{
+   background-color: rgb(135,91,226);
+   color: rgba(255, 255, 255, 0.89);
+   padding: 15px 0px 15px 30px;
+   line-height: 30px;
+   cursor: pointer;
+}
+.InstructorPhoto{
+   display: inline-block;
+   padding: 25px 60px 25px 20px;
+}
+.InstructorDetails{
+   display: inline-block;
+   padding: 40px 0px 25px 15px;
+   vertical-align: top;
+   line-height: 20px;
+}
+.Name{
+   font-weight: 700;
+}
+.Education, .Institution{
+font-size: 13px;
+}
+hr{
+   width: 640px;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.options{
+   display: flex;
+}
+.options li{
+   list-style: none;
+   padding: 15px 10px 20px 15px;
+   width: 120px;
+   text-align: center;
+}
+.options i{
+   font-size: 40px;
+   cursor: pointer;
+
+}
+.OptionsText{
+   font-size: 12px;
+   font-weight: 600;
+   padding-top: 15px;
+}
+.options i:hover{
+   color: rgb(191, 191, 191);
+   transform: scale(1.15);
+}
+.LectureNum{
+   height: 42px;
+   width: 75px;
+   border-radius: 25px;
+   font-size: 30px;
+   padding: 3px 0px 3px 0px;
+   font-style: italic;
+   font-weight:600;
+   background-color: white;
+   border: 1px solid rgb(54,163,247);
+   color: rgb(54,163,247);
+   position: absolute;
+   top: 140px;
+   right: 15px;
+   box-shadow: 2px 2px 7px   hwb(206 67% 0%);
+   cursor: pointer;
+}
+.LectureNum:hover{
+   color: white;
+   background-color: rgb(54,163,247) ;
 }
